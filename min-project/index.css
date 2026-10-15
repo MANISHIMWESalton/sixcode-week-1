@@ -23,6 +23,74 @@ body{
     font-family: "Helvetica Neue",Arial,sans-serif;
 }
 .pricing{
-    width: clamp(18rem 90vw 57rem);
+    width: clamp(18rem, 90vw,57rem);
     margin: 0 auto;
+}
+table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background: var(--card-bg);
+    font-family: clamp(0.9rem,1.8vw,1.15rem);
+    border-radius: 10px;
+}
+th,td{
+    padding: clamp(0.9rem,2.5vw,1.6rem) clamp(0.75rem,2.2vw,1.6rem);
+    text-align: left;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background: var(--header-bg);
+    color: var(--header-text);
+    font-weight: 700;
+}
+tbody tr:nth-child(even){
+    background: var(--mint);
+}
+
+tbody tr:hover{
+    background: var(--hover);
+}
+tbody td:first-child{
+    position: relative;
+    font-weight: 700;
+}
+tbody td:first-child::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 20%;
+  height: 60%;
+  width: 4px;
+  border-radius: 0 4px 4px 0;
+  background: var(--green);
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+tbody td:nth-child(2) {
+  color: var(--green);
+  font-weight: 700;
+}
+.check{
+    width: 1.7em;
+  height: 1.7em;
+    display: block;
+    transition: transform 0.2s ease;
+}
+.check circle {
+  fill: var(--green);
+  transition: fill 0.2s ease;
+}
+.check path {
+  fill: none;
+  stroke: #ffffff;
+  stroke-width: 1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+h1 {
+  font-size: clamp(1.25rem, 3vw, 1.75rem);
+  margin: 0 0 1.25rem;
 }
