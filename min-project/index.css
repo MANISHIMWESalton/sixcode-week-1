@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+
+:root{
+    --page-bg:#f3f5f4;
+    --card-bg:#ffffff;
+    --header-bg:#000000;
+    --header-text:#ffffff;
+    --text:#1a1a1a;
+    --green: #11805c;
+    --green-dark: #0a5c42;
+    --mint: #e6f4ee;
+    --hover: #cfeadf;
+}
+body{
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--page-bg);
+    color: var(--text);
+    padding: 4rem 1rem;
+    font-family: "Helvetica Neue",Arial,sans-serif;
+}
+.pricing{
+    width: clamp(18rem 90vw 57rem);
+    margin: 0 auto;
+}
