@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SixCode Sign-up Form</title>
+</head>
+<body>
+    <main>
+        <h1>Join SixCode Academy </h1>
+        <p>Create your account and choose a membership plan</p>
+        <form action="">
+            <div>
+                <div>
+                    <label for="firstname">First name</label>
+                    <input type="text" id="firstname" name="firstname" placeholder="Salton">
+                </div>
+                <div>
+                    <label for="lastname">Last name</label>
+                    <input type="text" id="lastname" name="lastname" placeholder="Joe">
+                </div>
+                 <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Joe@example.com">
+                </div>
+
+                <div>
+                    <label for="plan">Membership plan</label>
+                    <select name="plan" id="plan">
+                        <option value="" disabled selected> choose a plan</option>
+                        <option value="basic"> Basic - $19 / month</option>
+                        <option value="standard"> Standard - $49 / month</option>
+                        <option value="premium">Premium - $99 / month</option>
+                    </select>
+                </div>
+                <fieldset>
+                    <legend>Preferred learning time</legend>
+                   <div>
+                     <label for="option">
+                        <input type="radio" value="morning" name="time">
+                        Morning (8am - 12pm)
+                    </label>
+                   </div>
+                   <div>
+                     <label for="option">
+                        <input type="radio" value="afternoon" name="time">
+                        Afternoon  (12pm - 5pm)
+                    </label>
+                   </div>
+                    <div>
+                     <label for="option">
+                        <input type="radio" value="evening" name="time"> 
+                        Evening  (5pm - 9pm)
+                    </label>
+                   </div>
+                </fieldset>
+                <div>
+                    <label for="">What do you want to learn?</label>
+<textarea name="" id="" placeholder="For example: learn javascript"></textarea>
+                </div>
+                <div>
+                    <label for="">
+                        <input type="checkbox">
+                        I agree to the terms and privacy policy
+                    </label>
+                </div>
+            </div>
+        </form>
+    </main>
+</body>
+</html>
