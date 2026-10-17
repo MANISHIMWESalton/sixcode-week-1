@@ -20,7 +20,7 @@ body{
     background-color: var(--page-bg);
     color: var(--text);
     padding: 4rem 1rem;
-    font-family: "Helvetica Neue",Arial,sans-serif;
+    font-family: Arial,sans-serif;
 }
 .pricing{
     width: clamp(18rem, 90vw,57rem);
@@ -75,7 +75,7 @@ tbody td:nth-child(2) {
 }
 .check{
     width: 1.7em;
-  height: 1.7em;
+    height: 1.7em;
     display: block;
     transition: transform 0.2s ease;
 }
