@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="form-card">
+        <h1>Contact us</h1>
+        <form action="">
+            <div class="row">
+                <div class="field">
+                    <label for="firstname">First Name<span class="required">*</span></label>
+                    <input type="text" name="firstname" id="firstname" required min="3"><span class="error-msg">Please enter at least 3 letters</span>
+                </div>
+                <div class="field">
+                    <label for="lastname">Last Name<span class="required">*</span></label>
+                    <input type="text" name="lastname" id="lastname" required min="3"><span class="error-msg">Please enter at least 3 letters</span>
+
+                </div>
+            </div>
+            <div class="field">
+                <label for="email">Email<span class="required">*</span></label>
+                <input type="email" name="email" id="email" required>  <span class="error-msg">Please enter a valid email</span>
+                
+            </div>
+            <div class="field">
+                <label for="password">Password<span class="required">*</span></label>
+                <input type="password" name="password" id="password" required minlength="8">  <span class="error-msg">Please enter a valid password</span>
+            </div>
+            <div class="field">
+                <label for="message">Message<span class="required">*</span></label>
+                <textarea name="message" id="message" maxlength="500"></textarea>
+            </div>
+            <button type="submit">Send message</button>
+        </form>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
