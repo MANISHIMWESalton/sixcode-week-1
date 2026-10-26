@@ -1,0 +1,135 @@
+*{
+    box-sizing: border-box;
+}
+:root{
+    --bage-bg:#f3f5f4;
+    --card-bg:#ffffff;
+    --text:#1a1a1a;
+    --border:#cfd8d4;
+    --radius:8px;
+    --green-light:#e6f4ee;
+    --blue:rgb(9, 9, 235);
+    --muted: #5f6b66;
+    --green: #11805c;
+
+}
+
+body{
+    min-height: 100vh;
+    background: var(--bage-bg);
+    color:var(--text);
+    font-family: "Helvetica Neue",Arial,sans-serif;
+    padding: 3rem 1rem;
+    margin: 0;
+}
+.form-card{
+  width: clamp(18rem,92vw,36rem);
+  margin: 0 auto;  
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: clamp(1.5rem,5vw,2.5rem);
+}
+.form-card h1{
+    margin: 0 0 0.25rem;
+    font-size: clamp(1.4rem,4vw,1.75rem);
+}
+.form-card .intro{
+    margin: 0 0 2rem;
+    color: var(--muted);
+}
+.field{
+    margin-bottom: 1.25rem;
+}
+
+label ,legend{
+    display: block;
+    font-weight: 700;
+    font-size: 0.95rem;
+    margin-bottom: 0.4rem;
+}
+input[type="text"],input[type="email"],select,textarea{
+    width: 100%;
+    padding: 0.75rem 0.9rem;
+    color:var(--text);
+    background: #fff;
+    border: 1.5px solid var(--border);
+    border-radius: var(--radius);
+    font: inherit;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #9aa5a0;
+}
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--blue);
+  box-shadow: 0 0 0 3px var(--green-light);
+}
+textarea{
+    min-height: 7rem;
+    resize: vertical;
+}
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0 0 1.25rem;
+}
+.options {
+  display: grid;
+  gap: 0.6rem;
+}
+input[type="radio"],input[type="checkbox"]{
+    width: 1.1rem;
+    height: 1.1rem;
+    margin: 0;
+    cursor: pointer;
+    accent-color: green;
+}
+.checkbox{
+    display: flex;
+    align-items: flex-start;
+    gap: 0.6rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+.checkbox input{
+    margin-top: 0.2rem;
+}
+button {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.9rem 1rem;
+  font: inherit;
+  font-weight: 700;
+  color: #fff;
+  background: var(--green);
+  border: none;
+  border-radius: var(--radius);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+.option {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--border);
+  border-radius: var(--radius);
+  font-weight: 400;
+  margin: 0;
+  cursor: pointer;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+.row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0 1rem;
+}
+
+@media (min-width: 520px) {
+    .row {
+        grid-template-columns: 1fr 1fr;
+    }
+}

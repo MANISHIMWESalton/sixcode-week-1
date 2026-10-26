@@ -1,0 +1,55 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f3f5f4;
+    color: #1a1a1a;
+}
+ table{
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+    background-color: #ffffff;
+ }
+ caption{
+    text-align: left;
+  margin: 0 0 1.25rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding-top: 4rem;
+
+ }
+ th, td{
+    text-align: left;
+    padding: 0.75rem 1rem;
+
+ }
+ thead th{
+    background: #000;
+    color: #fff;
+    position: sticky;
+    top: 0;
+
+ }
+ tbody td{
+    border-bottom: 1px sold #ddd;
+ }
+tbody tr:nth-child(even){
+   background: rgba(150, 252, 252, 0.562);
+}
+.table-wrapper{
+   width: clamp(18rem, 90vw, 57rem);
+   margin: 0 auto;
+}
+table{
+   font-size: clamp(0.85rem, 2vw,1rem);
+}
+th, td{
+padding: clamp(0.5rem,1.5vw,0.75rem) clamp(0.5rem ,2vw,1rem);
+}
+tbody tr:hover{
+   background: #cfeadf;
+}
